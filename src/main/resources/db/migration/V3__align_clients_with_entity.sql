@@ -1,0 +1,2 @@
+ALTER TABLE clients
+    CHANGE COLUMN full_name name VARCHAR(150) NOT NULL;

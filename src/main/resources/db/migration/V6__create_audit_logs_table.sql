@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS audit_logs (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    actor VARCHAR(100) NOT NULL,
+    action VARCHAR(100) NOT NULL,
+    target_type VARCHAR(50) NOT NULL,
+    target_id BIGINT,
+    details TEXT,
+    outcome VARCHAR(50) NOT NULL,
+    timestamp DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
