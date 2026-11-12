@@ -1,4 +1,4 @@
-const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080').replace(/\/$/, '')
+const API_BASE_URL = import.meta.env.PROD ? 'https://payflow-agent-api.onrender.com' : 'http://localhost:8080';
 
 async function toPayload(response) {
   if (response.status === 204) return null
