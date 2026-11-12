@@ -37,7 +37,7 @@ PayFlow Agent is a full-stack AI accounts receivable and invoicing copilot that 
 * Java 17+ & Maven
 * Node.js 18+ & npm
 * MySQL 8.0+
-* PayPal Developer Sandbox Client ID & Secret
+* PayPal Developer Sandbox Credentials
 
 ### 1. Backend Setup (Spring Boot)
 ```bash
@@ -45,12 +45,12 @@ PayFlow Agent is a full-stack AI accounts receivable and invoicing copilot that 
 git clone [https://github.com/RAJKOTIYACHIRAGMUKESHBHAI/payflow-agent.git](https://github.com/RAJKOTIYACHIRAGMUKESHBHAI/payflow-agent.git)
 cd payflow-agent
 
-# Configure environment variables (or application.properties)
+# Set environment variables in your terminal or hosting provider
 export DB_URL="jdbc:mysql://localhost:3306/payflow"
 export DB_USERNAME="root"
-export DB_PASSWORD="your_mysql_password"
-export PAYPAL_CLIENT_ID="your_paypal_sandbox_client_id"
-export PAYPAL_CLIENT_SECRET="your_paypal_sandbox_secret"
+export DB_PASSWORD="<YOUR_MYSQL_PASSWORD>"
+export PAYPAL_CLIENT_ID="<YOUR_PAYPAL_SANDBOX_CLIENT_ID>"
+export PAYPAL_CLIENT_SECRET="<YOUR_PAYPAL_SANDBOX_SECRET>"
 
 # Run the Spring Boot API
 ./mvnw spring-boot:run
